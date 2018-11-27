@@ -2,13 +2,19 @@ package algorithms;
 
 public class Fibonacci {
 	public static void main(String[] args) {
-		int a = 0;
-		int b = 1;
+		int low=0;
+		int high=1;
+		int temp=0;
+		System.out.println(low);
 		for (int i = 0; i < 12; i++) {
-			System.out.println(a);
-			System.out.println(b);
-			System.out.println(a+b);
-			System.out.println();
+			
+			temp=low+high;
+			low=high;
+			high=temp;
+			System.out.println(low);
+			
+			
+			
 			
 		}
 	}
