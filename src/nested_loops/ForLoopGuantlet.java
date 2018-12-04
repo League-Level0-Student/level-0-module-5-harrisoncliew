@@ -40,11 +40,18 @@ public class ForLoopGuantlet {
 				for (int j = 0; j < 3; j++) {
 					System.out.println(lot+" "+j);
 				}
+			}
+				for (int x = 0; x < 3; x++) {
+					String low = ""+x;
+					for (int z = 0; z < 3; z++) {
+						
+					}
+				}
 				
 			}
 		}
 		
 		
-	}
+	
 
 
