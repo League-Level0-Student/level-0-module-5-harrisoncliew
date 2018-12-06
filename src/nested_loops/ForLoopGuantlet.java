@@ -41,15 +41,47 @@ public class ForLoopGuantlet {
 					System.out.println(lot+" "+j);
 				}
 			}
-				for (int x = 0; x < 3; x++) {
+				for (int x = 1; x < 8; x+=3) {
 					String low = ""+x;
-					for (int z = 0; z < 3; z++) {
+					for (int z = x; z < x+3; z++) {
+						System.out.print(z+" ");
+							
+						}
+					System.out.println();
+					}
+				for (int c = 1; c < 101; c+=10) {
+					String interesting = ""+c;
+					for (int d = c; d < c+10; d++) {
+						System.out.print(d+" ");
+					}
+					System.out.println();
+				}
+				
+				
+				for( int e=0; e<6; e++) {
+					for (int r = 0; r < e+1 ; r++) {
 						
+					
+					System.out.print("*");
+					}
+					System.out.println();
+				}
+				for (int y = 0; y < 101; y++) {
+					System.out.println(100-y);
 					}
 				}
 				
-			}
-		}
+				}
+
+					
+				
+				
+				
+				
+				
+				
+			
+		
 		
 		
 	
