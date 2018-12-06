@@ -75,22 +75,36 @@ void skill3() { // Get a random number that is less than 20 and print it to the 
 }
 
 void skill4() { // In a pop-up, ask the user for the city they live in 
+	String home = JOptionPane.showInputDialog("What city do you live in?");
 
 
 
 // If they answered "San Diego", tell them they live in America's Finest City 
+	if(home.equalsIgnoreCase("San Diego")) {
+		JOptionPane.showMessageDialog(null, "You live in America's finest city.");
+	}
 
 
 
 // Otherwise, tell them to move to San Diego 
+	else {
+		JOptionPane.showMessageDialog(null, "Move to San Diego!");
+	}
 
 
 
-// Create a variable - cars - and initialize it to the number of cars your family has. // If there are 0 cars, use a pop-up to display, "I bet you use public transportation." 
+// Create a variable - cars - and initialize it to the number of cars your family has.
+	String cars = JOptionPane.showInputDialog("How many cars does you family have?");
+	int cars2 = Integer.parseInt(cars);
+	// If there are 0 cars, use a pop-up to display, "I bet you use public transportation."
+	if
 
 
 
-// If there is 1 car, use a pop-up to display the make/model of the car 
+// If there is 1 car, use a pop-up to ask the make/model of the car 
+	if(cars2==1) {
+		
+	}
 
 
 
