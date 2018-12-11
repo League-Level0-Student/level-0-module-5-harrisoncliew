@@ -1,5 +1,7 @@
 package extra;
 
+import java.util.Random;
+
 import javax.swing.JOptionPane;
 
 public class SkillPractice {
@@ -48,7 +50,9 @@ void skill1() {
 
 void skill2() { // Write a loop to print every third number between 1 and 30 to the console 
 	for (int i = 1; i < 31; i++) {
+		if(i%3==0) {
 		System.out.println(i);
+	}
 	}
 
 
@@ -60,15 +64,20 @@ void skill2() { // Write a loop to print every third number between 1 and 30 to 
 }
 
 void skill3() { // Get a random number that is less than 20 and print it to the console 
+	Random ran = new Random();
+	int cool = ran.nextInt(20);
+	System.out.println(cool);
 	
 
 
 
 // Get another random number that is less than 10 and print it to the console 
-
+	int impossible = ran.nextInt(10);
 
 
 // Using a pop-up, tell the user the difference between the numbers // Hint: use subtraction 
+	int running = cool-impossible;
+	JOptionPane.showMessageDialog(null, "The diiference between the two numbers is "+running+".");
 
 
 
@@ -97,28 +106,36 @@ void skill4() { // In a pop-up, ask the user for the city they live in
 	String cars = JOptionPane.showInputDialog("How many cars does you family have?");
 	int cars2 = Integer.parseInt(cars);
 	// If there are 0 cars, use a pop-up to display, "I bet you use public transportation."
-	if
+	if(cars2==0) {
+		JOptionPane.showMessageDialog(null, "I bet you use public transportation.");
+	}
+	
 
 
 
 // If there is 1 car, use a pop-up to ask the make/model of the car 
 	if(cars2==1) {
-		
+		JOptionPane.showInputDialog("what is the model?");
 	}
 
 
 
-// If there is more than 1 car, use a pop-up to display how many wheels the // cars have between them. 
+// If there is more than 1 car, use a pop-up to display how many wheels the // cars have between them.
+	if(cars2>=1) {
+		JOptionPane.showInputDialog("How many wheels do the cars have between them?");
+	}
 
 
 
 }
 
 void skill5() { // In a pop-up, ask the user for the name of their school 
+	String school = JOptionPane.showInputDialog("What is your school called?");
 
 
 
 // In another pop-up, tell the user, that their school is a fantastic school. // You must include the name of the school in the message. 
+	JOptionPane.showMessageDialog(null, school+"is a fantastic school.");
 
 
 
