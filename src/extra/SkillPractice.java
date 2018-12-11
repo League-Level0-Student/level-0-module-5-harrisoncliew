@@ -135,7 +135,7 @@ void skill5() { // In a pop-up, ask the user for the name of their school
 
 
 // In another pop-up, tell the user, that their school is a fantastic school. // You must include the name of the school in the message. 
-	JOptionPane.showMessageDialog(null, school+"is a fantastic school.");
+	JOptionPane.showMessageDialog(null, school+" is a fantastic school.");
 
 
 
